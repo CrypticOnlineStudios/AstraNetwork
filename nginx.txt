@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name astrax.neocities.org;
+
+    location /proxy {
+        allow_methods POST GET;
+        proxy_pass http://example.com;  # Replace with your target server URL
+    }
+
+    # Other server configuration...
+}

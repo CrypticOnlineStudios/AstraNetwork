@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra X</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background: linear-gradient(to top, #1a6cf0, #fafafa);
+            overflow: hidden;
+        }
+
+        #bubble-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100vh; /* Adjusted height to fill the entire viewport */
+            overflow: hidden;
+        }
+
+        .bubble {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            animation: bubbleRise 2.5s linear infinite; /* Faster rise to the top */
+        }
+
+        @keyframes bubbleRise {
+            0% {
+                bottom: 0;
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                bottom: 100%;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="bubble-container">
+        <div class="bubble" style="animation-duration: 2s; left: 10%;"></div>
+        <div class="bubble" style="animation-duration: 3s; left: 20%;"></div>
+        <div class="bubble" style="animation-duration: 2.5s; left: 30%;"></div>
+        <div class="bubble" style="animation-duration: 2.8s; left: 40%;"></div>
+        <div class="bubble" style="animation-duration: 3.2s; left: 50%;"></div>
+        <div class="bubble" style="animation-duration: 2.7s; left: 60%;"></div>
+        <div class="bubble" style="animation-duration: 3.5s; left: 70%;"></div>
+        <div class="bubble" style="animation-duration: 2.4s; left: 80%;"></div>
+        <div class="bubble" style="animation-duration: 2.9s; left: 90%;"></div>
+
+        <!-- Additional bubbles -->
+        <div class="bubble" style="animation-duration: 2.2s; left: 15%;"></div>
+        <div class="bubble" style="animation-duration: 3.3s; left: 25%;"></div>
+        <div class="bubble" style="animation-duration: 2.6s; left: 35%;"></div>
+        <div class="bubble" style="animation-duration: 3.1s; left: 45%;"></div>
+        <div class="bubble" style="animation-duration: 2.8s; left: 55%;"></div>
+        <div class="bubble" style="animation-duration: 3s; left: 65%;"></div>
+        <div class="bubble" style="animation-duration: 2.3s; left: 75%;"></div>
+        <div class="bubble" style="animation-duration: 2.7s; left: 85%;"></div>
+        <div class="bubble" style="animation-duration: 3.4s; left: 95%;"></div>
+        
+         <div class="bubble" style="animation-duration: 2.7s; left: 15%;"></div>
+        <div class="bubble" style="animation-duration: 3.3s; left: 25%;"></div>
+        <div class="bubble" style="animation-duration: 2.6s; left: 35%;"></div>
+        <div class="bubble" style="animation-duration: 3.1s; left: 45%;"></div>
+        <div class="bubble" style="animation-duration: 2.8s; left: 55%;"></div>
+        <div class="bubble" style="animation-duration: 3s; left: 65%;"></div>
+        <div class="bubble" style="animation-duration: 2.3s; left: 75%;"></div>
+        <div class="bubble" style="animation-duration: 2.7s; left: 85%;"></div>
+        <div class="bubble" style="animation-duration: 3.4s; left: 95%;"></div
+        
+         <div class="bubble" style="animation-duration: 2s; left: 10%;"></div>
+        <div class="bubble" style="animation-duration: 3s; left: 20%;"></div>
+        <div class="bubble" style="animation-duration: 2.5s; left: 30%;"></div>
+        <div class="bubble" style="animation-duration: 2.8s; left: 40%;"></div>
+        <div class="bubble" style="animation-duration: 3.2s; left: 50%;"></div>
+        <div class="bubble" style="animation-duration: 2.7s; left: 60%;"></div>
+        
+           <div class="bubble" style="animation-duration: 2s; left: 10%;"></div>
+        <div class="bubble" style="animation-duration: 3s; left: 20%;"></div>
+        <div class="bubble" style="animation-duration: 2.5s; left: 30%;"></div>
+        <div class="bubble" style="animation-duration: 2.8s; left: 40%;"></div>
+        <div class="bubble" style="animation-duration: 3.2s; left: 50%;"></div>
+        <div class="bubble" style="animation-duration: 2.7s; left: 60%;"></div>
+        
+         <div class="bubble" style="animation-duration: 2s; left: 10%;"></div>
+        <div class="bubble" style="animation-duration: 3s; left: 20%;"></div>
+        <div class="bubble" style="animation-duration: 2.5s; left: 30%;"></div>
+        <div class="bubble" style="animation-duration: 2.8s; left: 40%;"></div>
+        <div class="bubble" style="animation-duration: 3.2s; left: 50%;"></div>
+        <div class="bubble" style="animation-duration: 2.7s; left: 60%;"></div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra X</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+      
+  
+
+      
+    .navbar {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+        padding: 15px;
+        border-radius: 20px;
+        /* Removed the box-shadow property */
+        transition: all 0.5s;
+        z-index: 2;
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+         box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    
+   .navbar:hover {
+            transform: translateY(-3px); /* Move the navbar slightly upwards on hover */
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
+        }
+
+      
+
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .brand {
+            font-size: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+        }
+
+        .brand img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .sections {
+            display: flex;
+            gap: 20px;
+        }
+
+        .section {
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: background 0.3s, color 0.3s, transform 0.3s ease-in-out;
+        }
+
+         .section:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ddd;
+            transform: translateY(-5px); /* Smooth upward movement on hover */
+        }
+
+        .clock {
+            color: #fff;
+            font-size: 18px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand">
+            <img src="Logo.png" alt="Hydra Logo"> Astra X | V2
+        </div>
+        <div class="clock" id="clock"></div>
+        <div class="sections">
+            <a href="index.html" class="section">Home</a>
+            <a href="games.html" class="section">Games</a>
+            <a href="proxies.html" class="section">Proxies</a>
+            <a href="tools.html" class="section">Tools</a>
+            <a href="updates.html" class="section">Update Log</a>
+        </div>
+    </div>
+
+   <script>
+        function updateClock() {
+            const clock = document.getElementById("clock");
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            hours = (hours > 12) ? hours - 12 : hours;
+
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
+<!-- Path: index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra X</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #1a6cf0, #00FFFF);
+        }
+
+        .announcement-box {
+            position: relative;
+            background: none;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .announcement-box p {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        .announcement-box button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1a6cf0;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .announcement-box button:hover {
+            background-color: #0099ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="announcement-box" id="announcementBox">
+        <p>Drawing Tool<br> (Can Download Drawn Image)</p>
+        <button id="redirectBtn">Use Tool</button>
+    </div>
+
+    <script>
+        // Get the announcement box element
+        const announcementBox = document.getElementById('announcementBox');
+
+        // Function to show the announcement box
+        function showAnnouncementBox() {
+            announcementBox.style.opacity = '1';
+            announcementBox.style.transform = 'translateY(0)';
+        }
+
+        // Function to redirect to a specific page
+        function redirectToPage() {
+            window.location.href = 'drawing.html';
+        }
+
+        // Add event listeners for the animation and redirection
+        announcementBox.addEventListener('mouseenter', () => {
+            announcementBox.style.transform = 'translateY(-10px)';
+        });
+
+        announcementBox.addEventListener('mouseleave', () => {
+            announcementBox.style.transform = 'translateY(0)';
+        });
+
+        document.getElementById('redirectBtn').addEventListener('click', redirectToPage);
+
+        // Show the announcement box after a delay
+        setTimeout(showAnnouncementBox, 1500); // Adjust the delay (in milliseconds) as needed
+    </script>
+</body>
+</html>
+

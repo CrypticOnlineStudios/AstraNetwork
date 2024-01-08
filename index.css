@@ -1,0 +1,103 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+.form-container {
+  margin: auto;
+  height: 100vh;
+  width:100vh;
+  display:flex;
+  transform: translate(-28%, -35%);
+}
+
+form {
+  margin:auto;
+  border: none;
+}
+
+
+
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+
+body { 
+  min-height: 100vh;
+  background: #ffffff;
+  overflow:hidden;
+}
+h1 {
+  text-align: center;
+  top: 100px;
+  font-family: 'Poppins';
+  font-size: 100px;
+  color: #00b3ff;
+}
+
+.navbar {
+  background-color:#212121;
+  width:80%;
+  height:60px;
+  margin:auto;
+  align-items:center;
+  justify-content:center;
+  display:flex;
+  border-radius: 10px;
+}
+.nav-option {
+  vertical-align:middle;
+  float:left;
+  font-size:20px;
+  font-family:'Poppins';
+  text-decoration: none;
+  color: white;
+  margin-right:50px;
+}
+i{
+  margin-right:5px;
+}
+
+
+   .search {
+     width: 300px;
+     height: 57px;
+     border-radius: 5px;
+     background: transparent;
+     border: none;
+     color: black;
+     font-size: 18px;
+     outline: none;
+     margin-left:10px;
+     
+     
+   }
+
+
+ 
+  ::placeholder {
+    color: black;
+    font-size: 18px;
+    border: none;
+    
+    
+  }
+
+.submit-button {
+    background: transparent;
+    border: none;
+    width: 55px;
+    height: 60px;
+    color: black;
+  margin-left:5px;
+}
+
+.searchbox{
+  width: 400px;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin:auto;
+  border: 2px #796767 solid;
+ 
+  
+}
